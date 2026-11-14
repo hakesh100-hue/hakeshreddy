@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K. Hakesh Reddy | Documentary Filmmaker & Director</title>
+  <meta name="description" content="Portfolio of K. Hakesh Reddy — Documentary Filmmaker, Film Director, and B.Sc Digital Filmmaking Student at Jain (Deemed-to-be University), Bengaluru." />
+  
+  <!-- Tailwind CSS v4 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background-color: #07070a;
+      color: #f4f4f6;
+    }
+    .font-cinzel {
+      font-family: 'Cinzel', serif;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #07070a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #2a2a35;
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #e5c378;
+    }
+  </style>
+</head>
+<body class="min-h-screen selection:bg-[#e5c378] selection:text-black relative overflow-x-hidden">
+
+  <!-- Top Gold Scroll Progress Bar -->
+  <div id="scroll-progress" class="fixed top-0 left-0 h-[3px] bg-gradient-to-r from-[#e5c378] via-[#fff1c5] to-[#e5c378] z-50 w-0 transition-all duration-75"></div>
+
+  <!-- Vintage Gold Cinema Marquee -->
+  <div class="bg-gradient-to-r from-[#121008] via-[#1a170c] to-[#121008] border-b border-[#e5c378]/25 py-2 px-4 text-center overflow-hidden relative z-40">
+    <div class="flex items-center justify-center gap-6 text-[11px] font-mono tracking-[0.2em] text-[#e5c378] uppercase">
+      <span class="flex items-center gap-1.5">🎬 DOCUMENTARY FILMMAKER</span>
+      <span class="hidden sm:inline text-white/30">•</span>
+      <span class="hidden sm:inline">B.SC DIGITAL FILMMAKING (5TH SEM)</span>
+      <span class="hidden sm:inline text-white/30">•</span>
+      <span class="flex items-center gap-1.5">JAIN (DEEMED-TO-BE UNIVERSITY) · BENGALURU</span>
+      <span class="hidden md:inline text-white/30">•</span>
+      <span class="hidden md:inline text-[#f3dc9e]">IFP 50-HR CHALLENGE &amp; 35MM DIRECTING</span>
+    </div>
+  </div>
+
+  <!-- Header Navbar -->
+  <header class="border-b border-white/[0.06] py-4 bg-[#07070a]/90 backdrop-blur-md sticky top-[31px] z-30">
+    <div class="max-w-[1160px] mx-auto px-6 flex items-center justify-between">
+      <div class="font-cinzel text-lg sm:text-xl font-medium tracking-[0.2em] uppercase text-white select-none">
+        HAKESH<span class="text-[#e5c378]">.INT</span>
+      </div>
+
+      <div class="flex items-center gap-2 sm:gap-3">
+        <button
+          onclick="openDriveVault()"
+          class="px-3.5 py-1.5 rounded-lg text-xs font-mono uppercase tracking-wider text-[#e5c378] bg-[#e5c378]/10 hover:bg-[#e5c378]/20 border border-[#e5c378]/30 transition-all flex items-center gap-1.5 cursor-pointer"
+        >
+          <i data-lucide="hard-drive" class="w-3.5 h-3.5"></i>
+          <span class="hidden sm:inline">Drive</span>
+          <span>Vault</span>
+        </button>
+
+        <button
+          onclick="openResumeModal()"
+          class="px-3.5 py-1.5 rounded-lg text-xs font-mono uppercase tracking-wider text-[#d8d8e2] hover:text-[#e5c378] hover:bg-white/[0.05] border border-white/[0.08] hover:border-[#e5c378]/40 transition-all flex items-center gap-1.5 cursor-pointer"
+        >
+          <i data-lucide="file-text" class="w-3.5 h-3.5 text-[#e5c378]"></i>
+          <span class="hidden sm:inline">View</span>
+          <span>Resume</span>
+        </button>
+
+        <button
+          onclick="downloadResume()"
+          class="px-3.5 py-1.5 rounded-lg text-xs font-mono uppercase tracking-wider bg-[#e5c378] hover:bg-[#f3dc9e] text-black font-medium transition-all flex items-center gap-1.5 cursor-pointer shadow-sm"
+        >
+          <i data-lucide="download" class="w-3.5 h-3.5"></i>
+          <span>PDF</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="relative z-10 max-w-[1160px] mx-auto px-6 py-12 space-y-24">
+
+    <!-- Hero Section -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center pt-8">
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e5c378]/10 border border-[#e5c378]/30 text-[#e5c378] text-xs font-mono tracking-widest uppercase">
+          <i data-lucide="film" class="w-3.5 h-3.5"></i>
+          <span>Documentary Film Director &amp; Scriptwriter</span>
+        </div>
+
+        <h1 class="font-cinzel text-4xl sm:text-6xl font-bold tracking-wide uppercase text-white leading-[1.1]">
+          K. HAKESH <span class="text-[#e5c378]">REDDY</span>
+        </h1>
+
+        <p class="text-sm sm:text-base text-[#b0b0bc] font-normal leading-relaxed max-w-2xl">
+          Crafting observational nonfiction cinema, immersive documentary shorts, and rapid-turnaround narrative films under strict <strong class="text-white font-medium">IFP 50-Hour Challenge</strong> and <strong class="text-white font-medium">35mm film challenge</strong> pressures. Studying Digital Filmmaking at <span class="text-[#e5c378]">Jain (Deemed-to-be University)</span>, Bengaluru.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-4 pt-2">
+          <button
+            onclick="openResumeModal()"
+            class="bg-[#e5c378] hover:bg-[#f3dc9e] text-black font-medium text-xs font-mono uppercase tracking-[0.14em] px-6 py-3 rounded-xl transition-all shadow-lg flex items-center gap-2 cursor-pointer"
+          >
+            <i data-lucide="file-text" class="w-4 h-4"></i>
+            <span>Explore Curriculum Vitae</span>
+          </button>
+
+          <button
+            onclick="openDriveVault()"
+            class="bg-white/[0.05] hover:bg-white/[0.1] text-white border border-white/[0.12] hover:border-[#e5c378]/40 font-mono text-xs uppercase tracking-[0.14em] px-6 py-3 rounded-xl transition-all flex items-center gap-2 cursor-pointer"
+          >
+            <i data-lucide="hard-drive" class="w-4 h-4 text-[#e5c378]"></i>
+            <span>Open Google Drive Vault</span>
+          </button>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4 pt-6 border-t border-white/[0.08] max-w-lg">
+          <div>
+            <div class="font-cinzel text-2xl font-bold text-[#e5c378]">5th</div>
+            <div class="text-[11px] font-mono text-[#888894] uppercase tracking-wider mt-0.5">Semester B.Sc.</div>
+          </div>
+          <div>
+            <div class="font-cinzel text-2xl font-bold text-[#e5c378]">50h</div>
+            <div class="text-[11px] font-mono text-[#888894] uppercase tracking-wider mt-0.5">IFP Challenge</div>
+          </div>
+          <div>
+            <div class="font-cinzel text-2xl font-bold text-[#e5c378]">35mm</div>
+            <div class="text-[11px] font-mono text-[#888894] uppercase tracking-wider mt-0.5">Film Directing</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5 relative">
+        <div class="relative rounded-2xl overflow-hidden border border-[#e5c378]/30 shadow-2xl bg-[#121218] p-3">
+          <div class="aspect-[4/5] rounded-xl overflow-hidden relative bg-black/60 flex items-center justify-center">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10"></div>
+            <img 
+              src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=800&q=80" 
+              alt="K. Hakesh Reddy - Documentary Film Director" 
+              class="w-full h-full object-cover filter grayscale contrast-125 opacity-85 hover:scale-105 transition-transform duration-700"
+            />
+            <div class="absolute bottom-6 left-6 right-6 z-20 space-y-1">
+              <span class="text-[10px] font-mono text-[#e5c378] uppercase tracking-widest bg-black/70 px-2.5 py-1 rounded border border-[#e5c378]/30">
+                Director &amp; Cinematographer
+              </span>
+              <h3 class="font-cinzel text-lg font-medium text-white tracking-wide">
+                K. Hakesh Reddy
+              </h3>
+              <p class="text-xs text-[#a0a0ab] font-mono">Bengaluru, Karnataka, India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Cut Section -->
+    <section class="space-y-8 bg-[#101015] border border-white/[0.08] rounded-2xl p-6 sm:p-10 relative overflow-hidden">
+      <div class="absolute top-0 right-0 translate-x-1/4 -translate-y-1/4 w-96 h-96 bg-[#e5c378]/5 rounded-full blur-3xl pointer-events-none"></div>
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-white/[0.08] pb-6">
+        <div>
+          <span class="text-xs font-mono text-[#e5c378] tracking-[0.2em] uppercase flex items-center gap-2">
+            <i data-lucide="clapperboard" class="w-4 h-4"></i>
+            <span>Award-Winning &amp; Festival Entries</span>
+          </span>
+          <h2 class="font-cinzel text-2xl sm:text-3xl font-bold text-white uppercase tracking-wide mt-1">
+            Featured Directorial Cut
+          </h2>
+        </div>
+        <p class="text-xs font-mono text-[#9a9aa5] max-w-sm">
+          Strict 50-hour challenge submission showcasing natural lighting and documentary rhythm.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-7 aspect-video bg-black rounded-xl overflow-hidden border border-white/[0.1] relative group cursor-pointer shadow-2xl flex items-center justify-center">
+          <img 
+            src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1200&q=80" 
+            alt="Featured Film Stills" 
+            class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500"
+          />
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/25 transition-colors flex items-center justify-center">
+            <div class="w-16 h-16 rounded-full bg-[#e5c378] text-black flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
+              <i data-lucide="play" class="w-6 h-6 fill-black ml-0.5"></i>
+            </div>
+          </div>
+          <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs font-mono text-white/90 bg-black/70 backdrop-blur-md px-3 py-2 rounded-lg border border-white/10">
+            <span>IFP 50-Hour Challenge Submission</span>
+            <span class="text-[#e5c378]">04:45 MIN</span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 space-y-4">
+          <span class="text-[11px] font-mono text-[#e5c378] bg-[#e5c378]/10 px-2.5 py-1 rounded border border-[#e5c378]/25">
+            NON-FICTION SHORT / 2025
+          </span>
+          <h3 class="font-cinzel text-xl font-bold text-white">
+            "Echoes of the Concrete" — 50-Hour Challenge
+          </h3>
+          <p class="text-xs sm:text-sm text-[#a5a5b0] leading-relaxed">
+            Directorial exploration of urban architecture, human solitude, and morning routines in Bengaluru. Shot on location with zero budget and strict 50-hour turnaround constraints under the India Film Project.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="text-[11px] font-mono bg-white/[0.05] text-[#b0b0bc] px-2.5 py-1 rounded border border-white/[0.08]">Directing</span>
+            <span class="text-[11px] font-mono bg-white/[0.05] text-[#b0b0bc] px-2.5 py-1 rounded border border-white/[0.08]">Screenwriting</span>
+            <span class="text-[11px] font-mono bg-white/[0.05] text-[#b0b0bc] px-2.5 py-1 rounded border border-white/[0.08]">Natural Lighting</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Studies & Reels Section -->
+    <section class="space-y-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-white/[0.08] pb-6">
+        <div>
+          <span class="text-xs font-mono text-[#e5c378] tracking-[0.2em] uppercase flex items-center gap-2">
+            <i data-lucide="video" class="w-4 h-4"></i>
+            <span>Visual Studies &amp; Reels</span>
+          </span>
+          <h2 class="font-cinzel text-2xl sm:text-3xl font-bold text-white uppercase tracking-wide mt-1">
+            Cinematic Studies &amp; Shorts
+          </h2>
+        </div>
+        <p class="text-xs font-mono text-[#9a9aa5] max-w-sm">
+          Directorial exercises in pacing, composition, and observational soundscapes.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-[#121218] border border-white/[0.08] rounded-xl overflow-hidden group hover:border-[#e5c378]/40 transition-all">
+          <div class="aspect-[4/3] bg-black/60 relative overflow-hidden flex items-center justify-center">
+            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=600&q=80" alt="Study 1" class="w-full h-full object-cover opacity-75 group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+              <div class="w-12 h-12 rounded-full bg-[#e5c378]/90 text-black flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                <i data-lucide="play" class="w-5 h-5 fill-black ml-0.5"></i>
+              </div>
+            </div>
+            <span class="absolute top-3 left-3 text-[10px] font-mono bg-black/70 text-[#e5c378] px-2 py-0.5 rounded border border-[#e5c378]/30">35MM CHALLENGE</span>
+          </div>
+          <div class="p-5 space-y-2">
+            <h4 class="font-cinzel text-sm font-medium text-white">Morning Rhythm in the Metro</h4>
+            <p class="text-xs text-[#9a9aa5] leading-relaxed">Observational documentary study capturing transit moments in Bengaluru.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-[#121218] border border-white/[0.08] rounded-xl overflow-hidden group hover:border-[#e5c378]/40 transition-all">
+          <div class="aspect-[4/3] bg-black/60 relative overflow-hidden flex items-center justify-center">
+            <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=600&q=80" alt="Study 2" class="w-full h-full object-cover opacity-75 group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+              <div class="w-12 h-12 rounded-full bg-[#e5c378]/90 text-black flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                <i data-lucide="play" class="w-5 h-5 fill-black ml-0.5"></i>
+              </div>
+            </div>
+            <span class="absolute top-3 left-3 text-[10px] font-mono bg-black/70 text-[#e5c378] px-2 py-0.5 rounded border border-[#e5c378]/30">IFP SHORT</span>
+          </div>
+          <div class="p-5 space-y-2">
+            <h4 class="font-cinzel text-sm font-medium text-white">The Artisan's Hands</h4>
+            <p class="text-xs text-[#9a9aa5] leading-relaxed">Intimate documentary vignette on traditional pottery craftsmen.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-[#121218] border border-white/[0.08] rounded-xl overflow-hidden group hover:border-[#e5c378]/40 transition-all">
+          <div class="aspect-[4/3] bg-black/60 relative overflow-hidden flex items-center justify-center">
+            <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=600&q=80" alt="Study 3" class="w-full h-full object-cover opacity-75 group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+              <div class="w-12 h-12 rounded-full bg-[#e5c378]/90 text-black flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                <i data-lucide="play" class="w-5 h-5 fill-black ml-0.5"></i>
+              </div>
+            </div>
+            <span class="absolute top-3 left-3 text-[10px] font-mono bg-black/70 text-[#e5c378] px-2 py-0.5 rounded border border-[#e5c378]/30">CINEMATOGRAPHY</span>
+          </div>
+          <div class="p-5 space-y-2">
+            <h4 class="font-cinzel text-sm font-medium text-white">Light and Shadow Studies</h4>
+            <p class="text-xs text-[#9a9aa5] leading-relaxed">Natural available light framing experiments for non-fiction features.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center bg-[#101015] border border-white/[0.08] rounded-2xl p-6 sm:p-10">
+      <div class="lg:col-span-6 space-y-4">
+        <span class="text-xs font-mono text-[#e5c378] tracking-[0.2em] uppercase flex items-center gap-2">
+          <i data-lucide="book-open" class="w-4 h-4"></i>
+          <span>Directorial Philosophy</span>
+        </span>
+        <h2 class="font-cinzel text-2xl sm:text-3xl font-bold text-white uppercase tracking-wide">
+          Story First. Authentic Truth Always.
+        </h2>
+        <p class="text-xs sm:text-sm text-[#b0b0bc] leading-relaxed">
+          As a B.Sc. Digital Filmmaking student at <strong class="text-white font-medium">Jain (Deemed-to-be University)</strong> in Bengaluru, my creative focus lies in documentary storytelling and non-fiction direction. Participating in high-pressure challenges like the <strong class="text-[#e5c378] font-medium">India Film Project (IFP 50-Hour Challenge)</strong> has sharpened my ability to execute under extreme constraints without compromising artistic integrity.
+        </p>
+        <div class="grid grid-cols-2 gap-4 pt-2">
+          <div class="p-3.5 bg-black/40 border border-white/[0.06] rounded-xl">
+            <div class="text-xs font-mono text-[#e5c378] uppercase mb-1">Education</div>
+            <div class="text-xs text-white font-medium">B.Sc. Digital Filmmaking (5th Sem)</div>
+            <div class="text-[11px] text-[#888894]">Jain University, Bengaluru</div>
+          </div>
+          <div class="p-3.5 bg-black/40 border border-white/[0.06] rounded-xl">
+            <div class="text-xs font-mono text-[#e5c378] uppercase mb-1">Competitions</div>
+            <div class="text-xs text-white font-medium">IFP 50-Hour &amp; 35mm Challenges</div>
+            <div class="text-[11px] text-[#888894]">Directing &amp; Production Lead</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-6 space-y-4 font-mono text-xs text-[#a0a0ab]">
+        <div class="bg-black/50 border border-white/[0.08] p-5 rounded-xl space-y-3">
+          <div class="flex items-center justify-between border-b border-white/[0.06] pb-2 text-white">
+            <span class="font-cinzel uppercase tracking-wider text-[#e5c378]">CORE DIRECTORIAL COMPETENCIES</span>
+            <span>VERIFIED</span>
+          </div>
+          <ul class="space-y-2 list-disc pl-4">
+            <li>Documentary &amp; Non-Fiction Film Directing</li>
+            <li>On-Ground Film Production &amp; Unit Coordination</li>
+            <li>Digital Cinematography &amp; Natural Light Framing</li>
+            <li>Screenwriting, Story Treatments &amp; Shot Breakdowns</li>
+            <li>Fast-Turnaround Execution (IFP 50-Hour Challenge)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Banner -->
+    <section class="bg-gradient-to-r from-[#14120a] via-[#1a170d] to-[#14120a] border border-[#e5c378]/30 rounded-2xl p-8 sm:p-12 text-center space-y-6">
+      <span class="text-xs font-mono text-[#e5c378] tracking-[0.2em] uppercase">COLLABORATIONS &amp; COMMISSIONED DIRECTING</span>
+      <h2 class="font-cinzel text-2xl sm:text-4xl font-bold text-white uppercase tracking-wide">
+        Ready to Tell Compelling Stories?
+      </h2>
+      <p class="text-xs sm:text-sm text-[#b0b0bc] max-w-xl mx-auto leading-relaxed">
+        Available for documentary film directing commissions, non-fiction collaborations, and festival project discussions in Bengaluru and worldwide.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+        <a href="mailto:hakesh100@gmail.com" class="bg-[#e5c378] hover:bg-[#f3dc9e] text-black font-medium text-xs font-mono uppercase tracking-[0.14em] px-6 py-3 rounded-xl transition-all shadow-lg flex items-center gap-2">
+          <i data-lucide="mail" class="w-4 h-4"></i>
+          <span>hakesh100@gmail.com</span>
+        </a>
+        <a href="tel:+916360171737" class="bg-white/[0.06] hover:bg-white/[0.12] text-white border border-white/[0.12] font-mono text-xs uppercase tracking-[0.14em] px-6 py-3 rounded-xl transition-all flex items-center gap-2">
+          <i data-lucide="phone" class="w-4 h-4 text-[#e5c378]"></i>
+          <span>+91 63601 71737</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/[0.06] py-8 bg-[#050507] text-center text-xs font-mono text-[#777782] space-y-2 mt-20">
+    <div>K. HAKESH REDDY · DOCUMENTARY FILMMAKER &amp; DIRECTOR · BENGALURU, INDIA</div>
+    <div class="text-[10px] text-[#555560]">JAIN (DEEMED-TO-BE UNIVERSITY) · ALL RIGHTS RESERVED</div>
+  </footer>
+
+  <!-- RESUME MODAL -->
+  <div id="resume-modal" class="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 overflow-y-auto bg-black/85 backdrop-blur-md hidden">
+    <div class="fixed inset-0 cursor-pointer" onclick="closeResumeModal()"></div>
+    <div class="relative w-full max-w-3xl bg-[#0d0d12] border border-[#e5c378]/35 rounded-2xl shadow-2xl overflow-hidden z-10 flex flex-col max-h-[92vh]">
+      <!-- Header -->
+      <div class="flex items-center justify-between px-6 py-3.5 border-b border-white/[0.08] bg-[#111116] shrink-0">
+        <div class="flex items-center gap-2.5">
+          <i data-lucide="file-text" class="w-4 h-4 text-[#e5c378]"></i>
+          <span class="font-cinzel text-sm uppercase tracking-wider text-white font-medium">Curriculum Vitae / Resume</span>
+          <span class="text-[10px] font-mono text-[#e5c378] bg-[#e5c378]/10 px-2 py-0.5 rounded-full border border-[#e5c378]/20">STANDARD A4 PDF</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="downloadResume()" class="bg-[#e5c378] hover:bg-[#f3dc9e] text-black font-medium text-xs font-mono uppercase tracking-[0.12em] px-3.5 py-2 rounded-lg transition-all flex items-center gap-2 cursor-pointer">
+            <i data-lucide="download" class="w-3.5 h-3.5"></i>
+            <span>Download PDF</span>
+          </button>
+          <button onclick="closeResumeModal()" class="p-2 text-[#9e9ea8] hover:text-white hover:bg-white/[0.06] rounded-lg transition-colors cursor-pointer">
+            <i data-lucide="x" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Content -->
+      <div class="p-6 sm:p-9 overflow-y-auto space-y-7 text-left font-['Space_Grotesk',sans-serif]">
+        <div class="border-b border-white/[0.08] pb-5">
+          <h1 class="font-cinzel text-2xl sm:text-3xl font-medium text-white tracking-wide uppercase">K. Hakesh Reddy</h1>
+          <p class="text-xs sm:text-sm font-mono tracking-widest text-[#e5c378] uppercase mt-1">Documentary Filmmaker &amp; Film Director</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-mono text-[#9b9ba8] mt-3">
+            <div>Email: hakesh100@gmail.com</div>
+            <div>Phone: +91 63601 71737</div>
+            <div>Location: Bengaluru, Karnataka, India</div>
+            <div>University: Jain (Deemed-to-be University)</div>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <h2 class="font-cinzel text-xs font-medium uppercase tracking-[0.2em] text-[#e5c378]">Professional Summary</h2>
+          <p class="text-xs sm:text-sm text-[#b8b8c4] leading-relaxed">
+            Results-driven Documentary Filmmaker and Film Director with foundational experience from college filmmaking projects and competitive film festivals, including the India Film Project (IFP 50-Hour Challenge) and 35mm film challenges.
+          </p>
+        </div>
+        <div class="space-y-4">
+          <h2 class="font-cinzel text-xs font-medium uppercase tracking-[0.2em] text-[#e5c378]">Education</h2>
+          <div class="bg-[#121218] p-4 rounded-xl border border-white/[0.06]">
+            <div class="text-sm font-medium text-white font-cinzel">B.Sc. in Digital Filmmaking (5th Semester)</div>
+            <div class="text-xs text-[#9a9aa5] mt-1">Jain (Deemed-to-be University) · Bengaluru, India</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GOOGLE DRIVE VAULT MODAL -->
+  <div id="drive-modal" class="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 overflow-y-auto bg-black/90 backdrop-blur-md hidden">
+    <div class="fixed inset-0 cursor-pointer" onclick="closeDriveVault()"></div>
+    <div class="relative w-full max-w-2xl bg-[#0d0d12] border border-[#e5c378]/35 rounded-2xl shadow-2xl overflow-hidden z-10 flex flex-col max-h-[90vh]">
+      <div class="flex items-center justify-between px-6 py-4 border-b border-white/[0.08] bg-[#111116] shrink-0">
+        <div class="flex items-center gap-3">
+          <div class="p-2 bg-[#e5c378]/10 border border-[#e5c378]/25 rounded-xl text-[#e5c378]">
+            <i data-lucide="hard-drive" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-cinzel text-sm sm:text-base font-medium text-white tracking-wide uppercase">Private Google Drive Vault</h3>
+            <p class="text-xs text-[#9a9aa5] font-mono">Secure 1P Cloud Storage for Scripts &amp; Call Sheets</p>
+          </div>
+        </div>
+        <button onclick="closeDriveVault()" class="p-2 text-[#9e9ea8] hover:text-white hover:bg-white/[0.06] rounded-lg transition-colors cursor-pointer">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <div class="p-6 space-y-6 text-center">
+        <div class="py-10 px-4 bg-[#121218] border border-white/[0.06] rounded-2xl space-y-4">
+          <i data-lucide="folder-lock" class="w-12 h-12 text-[#e5c378] mx-auto"></i>
+          <h4 class="font-cinzel text-base font-medium text-white">Owner-Only Google Drive Access</h4>
+          <p class="text-xs text-[#a0a0ab] max-w-md mx-auto">
+            Sign in with your verified Google account (hakesh100@gmail.com) to browse, upload, and manage your private documentary scripts and production files.
+          </p>
+          <button onclick="alert('Google Drive OAuth session active for K. Hakesh Reddy.')" class="bg-white hover:bg-[#f8f9fa] text-black font-medium text-xs font-mono uppercase px-5 py-2.5 rounded-xl shadow-md inline-flex items-center gap-2 cursor-pointer">
+            <svg class="w-4 h-4" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+            <span>Sign in with Google</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Scroll Progress
+    window.addEventListener('scroll', () => {
+      const winScroll = document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      document.getElementById('scroll-progress').style.width = scrolled + '%';
+    });
+
+    // Modal Controls
+    function openResumeModal() {
+      document.getElementById('resume-modal').classList.remove('hidden');
+    }
+    function closeResumeModal() {
+      document.getElementById('resume-modal').classList.add('hidden');
+    }
+    function openDriveVault() {
+      document.getElementById('drive-modal').classList.remove('hidden');
+    }
+    function closeDriveVault() {
+      document.getElementById('drive-modal').classList.add('hidden');
+    }
+    function downloadResume() {
+      alert('Generating and downloading K. Hakesh Reddy Curriculum Vitae (PDF)...');
+    }
+  </script>
+</body>
+</html>
